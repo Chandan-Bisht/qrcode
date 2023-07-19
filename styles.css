@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
+:root {
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --primary: hsl(0, 0%, 100%);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +21,7 @@ main {
     display: grid;
     place-items: center;
     min-height: 100vh;
-    background: hsl(212, 45%, 89%);
+    background: var(--light-gray);
     margin: auto;
     padding: 24px;
 }
@@ -22,7 +29,7 @@ main {
 .card {
     padding: 16px;
     border-radius: 20px;
-    background: hsl(0, 0%, 100%);
+    background: var(--primary);
     max-width: 300px;
     text-align: center;
 }
@@ -36,12 +43,13 @@ img {
     font-weight: 700;
     padding: 16px;
     font-size: 20px;
+    color: var(--dark-blue);
 }
 
 .text {
     font-size: 15px;
     font-weight: 400;
-    color: hsl(220, 15%, 55%);
+    color: var(--grayish-blue);
     padding-bottom: 20px;
 }
 
